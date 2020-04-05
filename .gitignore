@@ -3,3 +3,4 @@
 *.project
 ContactsProject/bin
 FindTheRunningMedian/bin
+*.class

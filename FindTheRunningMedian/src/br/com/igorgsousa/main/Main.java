@@ -68,9 +68,7 @@ public class Main {
             	}
             }
             
-            double runningMedian = runningMedian(numbers);
-            System.out.println(runningMedian);
-			result[aItr] = runningMedian;
+			result[aItr] = runningMedian(numbers);
         }
 
         
