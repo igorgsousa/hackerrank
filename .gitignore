@@ -1,4 +1,5 @@
 
-ContactsProject/.classpath
-ContactsProject/.project
+*.classpath
+*.project
 ContactsProject/bin
+FindTheRunningMedian/bin
