@@ -1,6 +1,8 @@
 package br.com.igorgsousa.main;
 
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 /**
@@ -23,15 +25,22 @@ public class Main {
 	
 	public static void levelOrder(Node root) {
 	      
-		 System.out.print(root.data+" ");
-
-		 if(root.left != null) {
-	    	  levelOrder(root.left);
-	     }
-		 
-		 if(root.right != null) {
-	    	  levelOrder(root.right);
-	     }	
+		Queue<Node> queue = new LinkedList<Node>(); 
+        queue.add(root); 
+        while (!queue.isEmpty())  
+        { 
+  
+            Node tempNode = queue.poll(); 
+            System.out.print(tempNode.data + " "); 
+  
+            if (tempNode.left != null) { 
+                queue.add(tempNode.left); 
+            } 
+  
+            if (tempNode.right != null) { 
+                queue.add(tempNode.right); 
+            } 
+        } 
     }
 
 	public static Node insert(Node root, int data) {
